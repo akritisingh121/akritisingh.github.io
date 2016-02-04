@@ -103,6 +103,32 @@ img.icon:hover {
   transform: rotate(360deg);
 }
 
+h2{
+	text-align: center;
+}
+p.project{
+	float:center;
+	margin: auto;
+	font-size: 15px;
+	width: 400px;
+}
+
+p.about{
+	float: center;
+	width: 400px;
+	font-size: 15px;
+	margin: auto;
+	margin-bottom: 25px;
+}
+
+img.project{
+	width: 300px;
+	height:auto;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 20px;
+	float: center;
+}
 
 p{
 	font-size: 40px;
