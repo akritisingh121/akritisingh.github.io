@@ -23,6 +23,10 @@ body {
 	margin: auto;
 }
 
+h3 {
+	color: #263248;
+}
+
 .headertext {
 	flex: 0 1 auto;
 	font-size: 40px;
@@ -67,8 +71,15 @@ body {
 	text-align: center;
 	border-top: 1px solid #7E8AA2;
 	border-bottom: 1px solid #7E8AA2;
-	color: #7E8AA2;
+	color: #6d6d6d;
 	margin-bottom: 20px;
+}
+
+.project-description {
+	font-size: 18px;
+	color: #6d6d6d;
+	padding: 20px;
+
 }
 
 .wrapper{
@@ -202,7 +213,7 @@ img.project{
 	text-align: left;
 	margin-bottom: 20px;}
 
-p{
+p {
 	font-size: 40px;
 	text-align: center;
 }
