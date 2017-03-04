@@ -14,6 +14,10 @@ a:hover {
 	opacity: 0.5;
 }
 
+a.index_button {
+	color: white;
+}
+
 body {
 	font-family: 'Montserrat-Regular', 'Helvetica Neue', Helvetica;
 	background-color: white;
@@ -33,6 +37,15 @@ h3 {
 	letter-spacing: 5px;
 	margin-left: 20px;
 	font-weight: bold;
+}
+
+.indexheadertext {
+	flex: 0 1 auto;
+	font-size: 40px;
+	letter-spacing: 5px;
+	margin: auto;
+	font-weight: bold;
+	text-align: center;
 }
 
 .buttons-wrapper {
@@ -113,7 +126,6 @@ nav {
 }
 
 img.art-option {
-
 	flex: 0 1 auto;
 	height: 300px;
 	width: 300px;
@@ -216,6 +228,64 @@ img.project{
 p {
 	font-size: 40px;
 	text-align: center;
+}
+
+.index_button {
+	flex: 0 1 auto;
+	width: 30%;
+	height: 100px;
+	line-height: 100px;
+	font-size: 30px;
+	padding: 50px;
+	text-align: center;
+	color: white;
+	letter-spacing: 5px;
+}
+
+.index_button.about {
+	background: 
+		linear-gradient(
+		      rgba(255, 0, 0, 0.45), 
+		      rgba(0, 0, 255, 0.25)
+		    ),
+		url("Icons/poly.jpg");
+	background-position: 0% 0%; 
+}
+
+.index_button.code {
+	background: 
+		linear-gradient(
+		      rgba(142, 0, 57, 0.45), 
+		      rgba(14, 185, 244, 0.65)
+		    ),
+		url("Icons/poly.jpg");
+	background-position: 70% 20%;
+}
+.index_button.design {
+	background: 
+		linear-gradient(
+		      rgba(142, 0, 57, 0.55), 
+		      rgba(14, 185, 244, 0.55)
+		    ),
+		url("Icons/poly.jpg");
+	background-position: 75% 45%;
+}
+.index_button.art {
+	background: 
+		linear-gradient(
+		      rgba(0, 0, 255, 0.05), 
+		      rgba(142, 0, 57, 0.45)
+		    ),
+		url("Icons/poly.jpg");
+	background-position: 50% 50%;	
+}
+
+.index_button_container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: auto;
+	margin: 0 auto;
 }
 
 footer {
