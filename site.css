@@ -92,7 +92,10 @@ h3 {
 	font-size: 18px;
 	color: #6d6d6d;
 	padding: 20px;
+}
 
+.project-description a {
+	color: #ff812c;
 }
 
 .wrapper{
@@ -211,12 +214,30 @@ p.project{
 }
 
 p.about{
-	float: center;
+	text-align: left;
 	width: 400px;
 	font-size: 15px;
 	margin: auto;
-	margin-bottom: 25px;
+	flex: 0 1 auto;
 }
+
+img.about {
+	flex: 0 1 auto;
+	width: 400px;
+	height:266px;
+}
+
+.about_container {
+	display: flex;
+	flex-flow: row wrap;
+	margin: auto;
+	width: 900px;
+}
+
+.about_container a {
+	color: #ff812c;
+}
+
 
 img.project{
 	width: 100%;
