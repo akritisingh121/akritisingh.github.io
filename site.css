@@ -130,9 +130,9 @@ nav {
 
 img.art-option {
 	flex: 0 1 auto;
-	height: 300px;
-	width: 300px;
-	margin: 20px;
+	height: 250px;
+	width: 250px;
+	margin: 30px;
 }
 
 .art-caption {
