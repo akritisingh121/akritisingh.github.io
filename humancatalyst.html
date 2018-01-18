@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			Akriti Singh
+		</title>
+		<link rel="stylesheet" type="text/css" href="site.css" media="screen">
+	</head>
+
+	<body>	
+		<div style="background-color:black">
+			<div style="background-image: url('art/digital/mtns.png'); width: 100%; height: 300px; padding: 100px; box-sizing: border-box; opacity:0.9; background-position: 25% 70%; background-size: 100% auto; display:flex; align-content: center; justify-content: center;">
+				<div class="page-title-bg">
+					<span class="page-title"> HUMAN CATALYST </span>
+				</div>
+			</div>
+		</div>
+		<nav>
+			<div class="headertext"><a href="index.html">AKRITI SINGH</a></div>
+			<div class="buttons-wrapper">
+				<div class= "nav-button">
+					<a href="about.html">ABOUT</a>
+				</div> <div class= "nav-button">
+					<a href="code.html">CODE</a>
+				</div> <div class= "curr-nav-button">
+					<a href="design.html">DESIGN</a>
+				</div> <div class= "nav-button">
+					<a href="art.html">ART</a>
+				</div>
+			</div> 
+		</nav>
+		
+		<div class="content">
+			<div id = "projcontent">
+				<div class = "project-description">
+				<div class="index-header"> OVERVIEW </div> 
+				Through Berkeley Innovation, my team partnered with <a href="http://lecida.com/" target="_blank">Lecida</a>, a predictive maintenance system for industrial equipment which aims to use machine learning to optimize performance. They wanted us to design an interface for the web application, which would allow users to see the status of different machines and choose corresponding action items. (Scroll all the way down to see an <a href="#prototype"> interactive prototype</a>).
+
+				<hr style="margin: 50px 0px; opacity: 0.25">
+
+				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> THE PROBLEM </div> 
+				Whenever an industrial machine experiences a failure and goes down (think windmills, crop sprayers, and other large-scale machines), thousands of dollars are lost. If there was an easy way for manufacturers to know in advance if a certain machine is likely to fail, then they could arrange to have the machine fixed or replaced before a failure. 
+
+				Therefore, the research question we formulated was:
+				<div style="margin-left: 40px; margin-top: 20px; margin-bottom:20px; border-left:5px solid #ff812c; padding-left: 15px"> How might we help manufacturers pinpoint the cause of a machine malfunction and make an educated decision about handling it? </div>
+
+				<hr style="margin: 50px 0px; opacity: 0.25">
+
+				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> RESEARCH </div>
+				Because most of us had no experience dealing with industrial machines, we set out to do some background research to better understand the different factors that go into machine maintenance and all the different people involved with the reparing process. We had the opportunity to speak with <a href="http://www.precisionstory.com/book" target="_blank"> Timothy Chou</a>, a Stanford professor who wrote a book called <i>Precision</i> about the Internet of Things applied to industrial machinery. We learned that when a machine fails, it usually means that a certain part of the machine has experienced a failure (due to overheating, manufacturing defects, etc.). Researching into the different types of failures helped us solidify a list of information that needed to be displayed. <br>
+
+				This was an overwhelming list at first, because each machine can have hundreds of sensors that collect data constantly. Our challenge was figuring out how to display this information in a readable and intuitive format.
+
+				<hr style="margin: 50px 0px; opacity: 0.25">
+
+				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> INITIAL SKETCHES </div>
+
+				After we developed an information hierarchy, we made some initial sketches to lay out the information. Some of the key features we chose to include in our preliminary drafts included:
+				<ul>
+					<li> Map to show location of machines around world, with a color indicator of the machines' status in the area </li>
+					<li> An inbox-type area to see key information for all predicted machine failures </li>
+					<li> An expanded prediction report, with detailed information about the prediction and machine status </li>
+				</ul>
+				
+				<div style="display:flex; justify-content: space-around; flex-flow: row nowrap; width:100%;">
+					<div style="flex: 0 1 auto; display:flex; flex-flow: column nowrap; width:50%;">
+						<img style="margin-bottom: 10px; flex: 0 1 auto; width: 97%; height:325px" src="design/lecida/a.png" alt="user research">
+						<img style="margin-bottom: 10px; flex: 0 1 auto; width:97%; height: 400px" src="design/lecida/b.png" alt="user research">
+					</div>
+					<div style="flex: 0 1 auto; display:flex; flex-flow: column nowrap; width:50%;">
+						<img style="margin-bottom: 10px; flex: 0 1 auto; width: 97%; height:350px" src="design/lecida/c.png" alt="user research">
+						<img style="flex: 0 1 auto; width:97%; height: 375px" src="design/lecida/d.png" alt="user research">
+					</div>
+				</div>
+
+				<hr style="margin: 50px 0px; opacity: 0.25">
+
+				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> FROM LOW FIDELITY TO HIGH FIDELITY </div>
+				This was an incredibly iterative process. For each rough mockup we made, we then realized we needed to include more information to make the platform more intuitive. Some key pieces of information that we had not anticipated to begin with included:
+
+				<ul>
+					<li> Timeline of a machine's ongoing maintenance history, and the ability to mark the problem as resolved </li>
+					<li> A way to report false negatives and false positives, along with detailed reporting forms to improve the prediction algorithm </li>
+					<li> A way to record and distinguish between predicted failures and actual failures (false negatives) </li>
+					<li> A way to record maintenance updates </li>
+
+				</ul>
+
+				<hr style="margin: 50px 0px; opacity: 0.25">
+
+				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> HOME (THE PREDICTION PAGE) </div>
+
+				We decided to have the "home" screen be an inbox of incoming predicted failures, because this is the information that is most important to see and the main focus of the platform.  <br>
+
+				<div style="display:flex; justify-content: space-around; flex-flow: row nowrap; width:100%; margin:20px; 0px">
+					<div style = "display:flex; flex-flow: column nowrap; flex: 0 1 auto; width: 49%;">
+						<div style = "flex: 0 1 auto; margin-bottom:10px"> MID FIDELITY</div>
+						<img style="flex: 0 1 auto; width: 100%; height:315px" src="design/lecida/mid-home.png" alt="user research">
+					</div>
+					<div style = "display:flex; flex-flow: column nowrap; flex: 0 1 auto; width: 49%">
+						<div style = "flex: 0 1 auto; margin-bottom:10px"> HI FIDELITY </div>
+						<img style="flex: 0 1 auto; width:100%; height: 315px" src="design/lecida/hi-home.png" alt="user research">
+					</div>
+				</div>
+
+				In our mid-fidelity mockups, we displayed details of predicted failures in boxes underneath the map. However, we realized that this might not be the best way to organize them because of sheer quantity-- one manufacturer might be responsible for thousands of machines globally, and this display could easily become overwhelming. <br> <br>
+
+				In our final designs, we instead decided to display predicted failures in an email-inbox design, with limited quantities of information (the most important details) as the previews. Then, the user could click into each one to view relevant details. Another important feature we included was a summary box under the map, so a user could click into any of the branches they own globally and then see summary statistics of machines at that location. This could be helpful to identify faulty machines at a particular location.
+
+
+				<hr style="margin: 50px 0px; opacity: 0.25">
+				
+				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> THE MACHINE PAGE </div>
+
+				We realized it was also important for a manufacturer to be able to see specific details and a history of a particular machine. Important details to view include a rough summary of the machine's specs, an easy visual display of it's sensor data, and a maintenance and prediction history.
+
+				<div style="display:flex; justify-content: space-around; flex-flow: row nowrap; width:100%; margin:20px; 0px">
+					<div style = "display:flex; flex-flow: column nowrap; flex: 0 1 auto; width: 49%;">
+						<div style = "flex: 0 1 auto; margin-bottom:10px"> MID FIDELITY</div>
+						<img style="flex: 0 1 auto; width: 100%; height:315px" src="design/lecida/mid-machine.png" alt="user research">
+					</div>
+					<div style = "display:flex; flex-flow: column nowrap; flex: 0 1 auto; width: 49%">
+						<div style = "flex: 0 1 auto; margin-bottom:10px"> HI FIDELITY </div>
+						<img style="flex: 0 1 auto; width:100%; height: 315px" src="design/lecida/hi-machine.png" alt="user research">
+					</div>
+				</div>
+
+				For each machine, we decided to display a summary of its specs, a graphic view of sensor data (with a filter bar to easily identify the sensors in question), a table view of its maintenance history with the ability to click into each entry and view a timeline of progress, and a feed of current predicted failures. <br>
+
+				From this page, users also have the ability to log maintenance and to report a false positive or false negative. 
+
+				<hr style="margin: 50px 0px; opacity: 0.25">
+
+				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> FINAL PRESENTATION </div>
+
+				<center>
+					<img class="project" src="design/lecida/poster.png" alt="poster">
+				</center>
+
+				<hr style="margin: 50px 0px; opacity: 0.25">
+
+				<a name="prototype">
+				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> INTERACTIVE PROTOTYPE</div>
+
+				<center>
+					<iframe width="900" height="1000" src="https://invis.io/QFES093KW" frameborder="0" allowfullscreen></iframe>
+				</center>
+
+				</div>
+			</div>
+		</div>
+				
+		<footer>
+			<a href="mailto:akritisingh@berkeley.edu" target="_blank">
+				<img class="icon" src="Icons/email.png" alt="email"></a>
+			<a href="https://www.linkedin.com/in/akriti-singh-118489107" target="_blank">
+				<img class="icon" src="Icons/linkedin.png" alt="linked in"></a>
+			<a href="https://github.com/akritisingh121" target="_blank">
+				<img class="icon" src="Icons/github.png" alt="github"></a>
+			<a href="https://behance.net/akritisingh" target="_blank">
+				<img class="icon" src="Icons/behance.png" alt="behance"></a>
+			<a href="https://instagram.com/akritisingh121" target="_blank">
+				<img class="icon" src="Icons/ig.png" alt="instagram"></a>
+
+			<div style = "text-align: center; font-size: 12px; margin-top: 30px; color: #7f8082"> © Akriti Singh 2018 </div>
+		</footer>
+	</body>
+</html>

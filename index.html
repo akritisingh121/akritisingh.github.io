@@ -5,28 +5,119 @@
 			Akriti Singh
 		</title>
 		<link rel="stylesheet" type="text/css" href="site.css" media="screen">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112396637-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-112396637-1');
+		</script>
+
 	</head>
 
 	<body>
-		<nav>
-			<div class="indexheadertext"><a href="index.html">AKRITI SINGH</a></div>
-		</nav>
-			
-		<div class="content">
-			<div class="index_button_container">
-				<div class="index_button about"><a href="about.html" class="index_button">ABOUT</a></div>
-				<div class="index_button code"><a href="code.html" class="index_button"> CODE </a></div>
-				<div class="index_button design"><a href="design.html" class="index_button"> DESIGN </a></div>
-				<div class="index_button art"> <a href="art.html" class="index_button">ART </a></div>
+
+		<div style="background-color:black">
+			<div style="background-image: url('art/digital/mtns.png'); width: 100%; height: 650px; padding: 100px; box-sizing: border-box; opacity:0.75; background-position: 25% 80%; background-size: 100% auto;">
+				<div class="home_text">
+					<span style="font-size:30px"> Hi, my name is </span><br>
+					<span style="font-size:75px">Akriti Singh</span>
+				</div>
 			</div>
+		</div>
+		<nav>
+			<div class="index-buttons-wrapper">
+				<div class= "nav-button">
+					<a href="about.html">ABOUT</a>
+				</div> <div class= "nav-button">
+					<a href="code.html">CODE</a>
+				</div> <div class= "nav-button">
+					<a href="design.html">DESIGN</a>
+				</div> <div class= "nav-button">
+					<a href="art.html">ART</a>
+				</div>
+			</div> 
+		</nav>
+
+		<div class="content">	
+			<div class="index-box" style="display:flex; flex-flow:row nowrap">
+				<div style="flex: 0 1 auto">
+					<img src="home.jpg" style="width:450px; margin-right:30px">
+				</div>
+				<div style="flex: 0 1 auto">
+					<span class="index-header"> ABOUT ME </span> <br> <br>
+
+					Hi! Wecome to my space on the internet. I'm currently a junior at UC Berkeley studying computer science and statistics, and I'm especially interested in the intersection of the two fields (data science). This semester, I am a TA for <a href="http://data8.org/sp18/" target="_blank"> Data 8</a>, a class at UC Berkeley called The Foundations of Data Science. I also have a background in human centered design thinking, and have experience working in product design. In this website, you can browse through some of the projects I have worked on over the past few years. <br> <br>
+
+					When I'm not busy with school, I love watching TV, browsing through new music on Spotify, and playing around with Adobe Photoshop & Illustrator to make <a href="digital.html">cool things</a>. <br> <br>
+
+					You can download my <a href="singh_akriti_2019_resume.pdf" target="_blank">resume</a> here, and feel free to <a href="mailto:akritisingh@berkeley.edu"> contact me </a> to chat about anything!
+				</div>
+			</div>
+
+			<hr style="margin: 50px 0px; opacity: 0.25">
+
+			<div class="index-box">
+				<span class="index-header"> DESIGN </span> <br> <br>
+
+				<div class="art-options" style="justify-content:flex-start">
+
+					 <div class="img-with-caption"> <a href="humancatalyst.html">
+						<img class="art-option" src="design/hc/hclogo.png" alt="humancatalyst" style="background-color:#b2b2a2;"></a> 
+						<div class="design-caption"> Human Catalyst is an employee engagement platform that hopes to decrease turnover rates by making workplace communication more enjoyable. </div> </div> 
+
+					<div class="img-with-caption"> <a href="lecida.html"> 
+						<img class="art-option" src="design/lecida/lecida.png" alt="lecida" style="background-color:#eee"></a> 
+						<div class="design-caption"> Lecida is a predictive maintenance system for industrial equipment which aims to use machine learning to optimize performance. </div> </div> 
+
+					<div class="img-with-caption"> <a href="nlytn.html"> 
+						<img class="art-option" src="design/nlytn/smartphagelogo.png" alt="nlytn" style="background-color:#C8E4E2; height:210px; width:210px; padding:20px"></a> 
+						<div class="design-caption"> Smart Phage aims to create a personalized and highly visual mobile health experience using metagenomic and sensory data. </div> </div>
+
+					<div class="img-with-caption"> <a href="appcivist.html"> 
+						<img class="art-option" src="design/appcivist/citriscopy.png" alt="citris" style="background-color:#eee"></a> 
+						<div class="design-caption"> Appcivist, a project through the Social Apps Lab in the CITRIS Foundry, is a communication and organizational platform for social activists. </div> </div> 
+
+					<div class="img-with-caption"> <a href="beadoo.html"> 
+						<img class="art-option" src="design/beadoo/beadoo.png" alt="beadoo" style="background-color:#FFEAEF; height:210px; width:210px; padding:20px"></a> 
+						<div class="design-caption"> Beadoo is a web application that encourages pediatric cancer patients to connect to their health emotionally and mentally. </div>
+					</div> 
+				</div> 
+			</div>
+
+			<hr style="margin: 50px 0px; opacity: 0.25">
+
+			<span class="index-header"> ART </span> <br> <br>
+
+			<div class="art-options">
+				<a href="digital.html"> <div class="img-with-caption"> 
+					<img class="art-option" src="art/digital/motel.png" alt="Brain Infographic">
+					<div class="art-caption"> DIGITAL </div>
+				</div> </a> <a href="fine_art.html"> <div class="img-with-caption"> 
+					<img class="art-option" src="art/fine/d_icon.jpg" alt="Afremov inspired">
+					<div class="art-caption"> FINE ART </div>
+				</div> </a> <a href="portfolio.html"> <div class="img-with-caption"> 
+					<img class="art-option" src="art/ap_art/brain.jpg" alt="Brain Infographic">
+					<div class="art-caption"> AP ART PORTFOLIO </div>
+				</div> </a>
+			</div> 
 		</div>
 			
 		<footer>
-			<hr style="width: 40%; margin-bottom: 50px">
-			<a href="https://www.linkedin.com/in/akriti-singh-118489107">
+			<a href="mailto:akritisingh@berkeley.edu" target="_blank">
+				<img class="icon" src="Icons/email.png" alt="email"></a>
+			<a href="https://www.linkedin.com/in/akriti-singh-118489107" target="_blank">
 				<img class="icon" src="Icons/linkedin.png" alt="linked in"></a>
-			<a href="https://github.com/akritisingh121">
+			<a href="https://github.com/akritisingh121" target="_blank">
 				<img class="icon" src="Icons/github.png" alt="github"></a>
+			<a href="https://behance.net/akritisingh" target="_blank">
+				<img class="icon" src="Icons/behance.png" alt="behance"></a>
+			<a href="https://instagram.com/akritisingh121" target="_blank">
+				<img class="icon" src="Icons/ig.png" alt="instagram"></a>
+
+			<div style = "text-align: center; font-size: 12px; margin-top: 30px; color: #7f8082"> © Akriti Singh 2018 </div>
 		</footer>
 	</body>
 </html>

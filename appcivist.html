@@ -8,6 +8,13 @@
 	</head>
 
 	<body>	
+		<div style="background-color:black">
+			<div style="background-image: url('art/digital/mtns.png'); width: 100%; height: 300px; padding: 100px; box-sizing: border-box; opacity:0.9; background-position: 25% 70%; background-size: 100% auto; display:flex; align-content: center; justify-content: center;">
+				<div class="page-title-bg">
+					<span class="page-title"> APPCIVIST </span>
+				</div>
+			</div>
+		</div>
 		<nav>
 			<div class="headertext"><a href="index.html">AKRITI SINGH</a></div>
 			<div class="buttons-wrapper">
@@ -24,88 +31,96 @@
 		</nav>
 		
 		<div class="content">
-			
-			<h2> Appcivist </h2>
 			<div id = "projcontent">
 				<div class = "project-description">
-				I worked with the Social Apps Lab in Citris on Appcivist, a platform for communication and organization for social activists. I worked on a team of 3 designers to design the user experience of the web application, and built wireframes using Adobe Illustrator. You can read more about the project <a href="http://citris-uc.org/social-apps-lab/project/appcivist-2/" target="_blank"> here</a>.
+				<div class="index-header"> OVERVIEW </div> 
+				I worked with the Social Apps Lab in the <a href="http://citrisfoundry.org/" target="_blank"> CITRIS Foundry</a> on Appcivist, a platform for communication and organization for social activists. I worked on a team of 3 designers to design the user experience of the web application, and built wireframes using Adobe Illustrator. You can read more about the project <a href="http://citris-uc.org/social-apps-lab/project/appcivist-2/" target="_blank">here</a>.
 
-				<h3> The Problem </h3>
+				<hr style="margin: 50px 0px; opacity: 0.25">
+
+				<div class="index-header"> THE PROBLEM </div>
 				Social activists currently find it very hard to organize themselves and to plan effective events. One of the hardest aspects is communicating with everyone who wishes to be involved with the group and advertising their cause. Much communication happens over email, and important information gets lost among dozens of threads, and it is difficult to organize events and notify everyone on a mailing list about them.
 
-				<h3> Research </h3>
+				<hr style="margin: 50px 0px; opacity: 0.25">
+
+				<div class="index-header">  RESEARCH </div>
 				We interviewed current social activists to learn more about their frustrations and processes. We learned that many people have busy lifestyles but are still interested in supporting a social activist group, and therefore would like a platform that makes communication as easy and effortless as possible, without a high learning curve. Many tools, such as petition-makers and event-creators already exist, and they would prefer to continue using them rather than having to learn to use new tools. As a result, we focused on making the web application a primarily organizational tool that served as a hub for resources.
-				<br>
-				<h3> Organizational Flow </h3>
-				The organization of groups can become very messy, because one person can support a few different causes, but be involved in many different groups within those causes, and each person might have a different level of involvement. We organized the groups such that one person could be a part of many different assemblies, which are groups of people supporting a large, overarching cause. Within assemblies are campaigns, which are smaller groups of people targeting a more specific goal, and within a campaign is a working group, which is an even smaller group of people. Members can share resources at each level of the hierarchy.
 
-				<center>
-					<br><br>
-					<img class="project" src="design/appcivist/information-architecture.jpg" alt="feed">
-					<br>
-					<img class="project" src="design/appcivist/low-fid.JPG" alt="resources">
-				</center>
-				<br>
-				<br><br>
+				<hr style="margin: 50px 0px; opacity: 0.25">
 
-				<h3> My Mobilization </h3>
-				We chose the three most important things that social activists would want to see for the dashboard: the organization of their involvements, a feed of important updates from each involvement, and updates from the events they are invited to. 
+				<div class="index-header"> ORGANIZATIONAL FLOW </div>
+				The organization of groups can become very messy, because one person can support a few different causes, but be involved in many different groups within those causes, and each person might have a different level of involvement. We organized the groups such that one person could be a part of many different assemblies, which are groups of people supporting a large, overarching cause. Within assemblies are campaigns, which are smaller groups of people targeting a more specific goal, and within a campaign is a working group, which is an even smaller group of people. Members can share resources at each level of the hierarchy. 
 
-				<center>
-					<br>
-				<img class="project" src="design/appcivist/5-2.jpg" alt="feed">
-				</center>
-				<br>
+				<div style="display:flex; justify-content: space-around; flex-flow: row nowrap; width:100%; margin-top: 20px">
+					<img style="flex: 0 1 auto; width: 550px; height:425px" src="design/appcivist/information-architecture.jpg" alt="feed">
+					<img style="flex: 0 1 auto; width:350px; height: 450px" src="design/appcivist/low-fid.JPG" alt="resources">
+				</div>
 
-				<h3> Resource Hub </h3>
+				<hr style="margin: 50px 0px; opacity: 0.25">
+
+
+				<div style="display:flex; justify-content: space-around; flex-flow: row nowrap; width:100%; margin-top: 20px">
+					<img style="flex: 0 1 auto; width:450px; height:325px; margin-right:30px" src="design/appcivist/5-2.jpg" alt="feed">
+					<div style="flex: 0 1 auto;">
+						<div class="index-header"> MY MOBILIZATION </div>
+						We chose the three most important things that social activists would want to see for the dashboard: 
+						<ul>
+							<li> the organization of their involvements</li> 
+							<li> a feed of important updates from each involvement</li> 
+							<li> and updates from the events they are invited to</li> 
+						</ul>
+					</div>
+				</div>
+
+				<hr style="margin: 50px 0px; opacity: 0.25">
+
+				<div class="index-header">  RESOURCE HUB </div>
 				We wanted it to be easy and painless as possible for a person to find a certain document they are looking for. We designed the resource hub so that each group, at any level, has its own hub of common resources, categorized by the type of resource. Any person can upload a document, and tag it with descriptors so that others can easily search for it. Each resource has its own thread of comments, so that people can easily make comments about documents in one place.
 
-				<center>
+				<div style="display:flex; justify-content: space-around; flex-flow: row nowrap; width:100%; margin-top: 20px">
+					<img style="flex: 0 1 auto; width:450px; height:325px;" src="design/appcivist/5-2c.jpg" alt="resources">
+					<img style="flex: 0 1 auto; width:450px; height:325px;" src="design/appcivist/5-2h.jpg" alt="resources details">
 					<br>
-					<img class="project" src="design/appcivist/5-2c.jpg" alt="resources">
-					<br>
-					<img class="project" src="design/appcivist/5-2h.jpg" alt="resources details">
-					<br>
-					<img class="project" src="design/appcivist/5-2e.jpg" alt="spreadsheet">
-					<br>
-				</center>
-				<br>
+				</div>
 
-				<h3> Managing Events </h3>
+				<hr style="margin: 50px 0px; opacity: 0.25">
+
+				<div class="index-header"> MANAGING EVENTS </div>
 				A large focus of the platform is on creating and managing events, so we made it easy for people to view upcoming events in different forms (calendar and list form). Each level of involvement has its own event page to keep them organized, an an individual has his/her own consolidated events page of all involvements.
 
-				<center>
+				<div style="display:flex; justify-content: space-around; flex-flow: row wrap; width:100%; margin-top: 20px">
+					<img style="flex: 0 1 auto; width:300px; height:250px;" src="design/appcivist/5-2b.jpg" alt="events">
+					<img style="flex: 0 1 auto; width:300px; height:250px;" src="design/appcivist/5-2g.jpg" alt="moderate events">
+					<img style="flex: 0 1 auto; width:300px; height:250px;" src="design/appcivist/5-2d.jpg" alt="members">
 					<br>
-				<img class="project" src="design/appcivist/5-2b.jpg" alt="events">
-					<br>
-				<img class="project" src="design/appcivist/5-2g.jpg" alt="moderate events">
-					<br>
-				<img class="project" src="design/appcivist/5-2d.jpg" alt="members">
-					<br>
-					<br>
-				</center>
-				<br>
+				</div>
 
-				<h3> Discussion Board </h3>
+				<hr style="margin: 50px 0px; opacity: 0.25">
+
+				<div class="index-header"> DISCUSSION BOARD</div>
 				The primary form of mass communication is the discussion board, where people can start their own threads and tag them by topic. Others can comment or express their opinions on each topic, so that conversations stay well organized and are easily accessible to each person (unlike email chains).
-				
-				<center>
+				<div style="display:flex; justify-content: space-around; flex-flow: row nowrap; width:100%; margin-top: 20px">
+					<img style="flex: 0 1 auto; width:450px; height:325px;" src="design/appcivist/5-2a.jpg" alt="discussion">
+					<img style="flex: 0 1 auto; width:450px; height:325px;" src="design/appcivist/5-2f.jpg" alt="discussion detail">
 					<br>
-						<img class="project" src="design/appcivist/5-2a.jpg" alt="discussion">
-						<br>
-						<img class="project" src="design/appcivist/5-2f.jpg" alt="discussion detail">
-						<br>
-				</center>
+				</div>
 				</div>
 			</div>
 		</div>
 				
 		<footer>
-			<hr style="width: 40%; margin-bottom: 50px">
-			<a href="https://www.linkedin.com/in/akriti-singh-118489107">
+			<a href="mailto:akritisingh@berkeley.edu" target="_blank">
+				<img class="icon" src="Icons/email.png" alt="email"></a>
+			<a href="https://www.linkedin.com/in/akriti-singh-118489107" target="_blank">
 				<img class="icon" src="Icons/linkedin.png" alt="linked in"></a>
-			<a href="https://github.com/akritisingh121">
+			<a href="https://github.com/akritisingh121" target="_blank">
 				<img class="icon" src="Icons/github.png" alt="github"></a>
+			<a href="https://behance.net/akritisingh" target="_blank">
+				<img class="icon" src="Icons/behance.png" alt="behance"></a>
+			<a href="https://instagram.com/akritisingh121" target="_blank">
+				<img class="icon" src="Icons/ig.png" alt="instagram"></a>
+
+			<div style = "text-align: center; font-size: 12px; margin-top: 30px; color: #7f8082"> © Akriti Singh 2018 </div>
 		</footer>
 	</body>
 </html>
