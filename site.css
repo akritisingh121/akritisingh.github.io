@@ -13,7 +13,10 @@ html,body
 
 @font-face {
 	font-family: 'Montserrat-Regular';
-	src: url('Montserrat/Montserrat-Regular.ttf') format('ttf');
+	/*src: url('Montserrat/Montserrat-Regular.ttf') format('ttf');*/
+  	src: url('Montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+       url('Montserrat/montserrat-regular-webfont.woff') format('woff'),
+       url('Montserrat/Montserrat-Regular.ttf')  format('truetype');
 }
 
 a {
@@ -176,6 +179,7 @@ h3 {
 	letter-spacing: 3px;
 	padding: 20px 30px;
 	transition: all 0.5s ease-in-out;
+	font-weight: bold;
 }
 
 .curr-nav-button {
