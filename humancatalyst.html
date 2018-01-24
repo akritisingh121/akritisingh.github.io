@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112396637-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-112396637-1');
+		</script>
 		<title>
 			Akriti Singh
 		</title>
@@ -34,107 +43,150 @@
 			<div id = "projcontent">
 				<div class = "project-description">
 				<div class="index-header"> OVERVIEW </div> 
-				Through Berkeley Innovation, my team partnered with <a href="http://lecida.com/" target="_blank">Lecida</a>, a predictive maintenance system for industrial equipment which aims to use machine learning to optimize performance. They wanted us to design an interface for the web application, which would allow users to see the status of different machines and choose corresponding action items. (Scroll all the way down to see an <a href="#prototype"> interactive prototype</a>).
+				Through Berkeley Innovation, my team partnered with <a href="https://www.humancatalyst.co/" target="_blank">Human Catalyst</a>, a mobile optimized platform for promoting employee engagement at the workplace. In particular, we were targeting the hourly customer service workforce to reduce turnover rates by giving employees a reason to remain at their current job. (Scroll all the way down to see an <a href="#prototype"> interactive prototype</a>).
 
 				<hr style="margin: 50px 0px; opacity: 0.25">
 
 				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> THE PROBLEM </div> 
-				Whenever an industrial machine experiences a failure and goes down (think windmills, crop sprayers, and other large-scale machines), thousands of dollars are lost. If there was an easy way for manufacturers to know in advance if a certain machine is likely to fail, then they could arrange to have the machine fixed or replaced before a failure. 
 
-				Therefore, the research question we formulated was:
-				<div style="margin-left: 40px; margin-top: 20px; margin-bottom:20px; border-left:5px solid #ff812c; padding-left: 15px"> How might we help manufacturers pinpoint the cause of a machine malfunction and make an educated decision about handling it? </div>
+				<div style="display:flex; justify-content: space-around; flex-flow: row nowrap; width:100%;">
+					<div style="flex: 0 1 auto; width:50%; margin-right: 30px">
+						High worker turnover is extremely costly to businesses-- they have to deal with onboarding expenses, and sacrifice efficiency and speed while training new employees. Currently, many hourly workers do not feel connected to their workplace, and find it easy to move from one hourly position to another. <br> <br>
+
+						We hypothesized that the primary motivation that people change jobs is due to salary, other benefits or monetary incentives, and location. Our job was to find out if outside of these factors, there are any other primary motivations for people to switch jobs. Therefore, the research question we formulated was:
+						<div style="margin-left: 40px; margin-top: 20px; margin-bottom:20px; border-left:5px solid #ff812c; padding-left: 15px"> How might we allow hourly workers to form meaningful connections to their workplace?</div>
+					</div>
+					<div style="flex: 0 1 auto; width:50%;">
+						<img src="design/hc/bg_info.png" style="width:100%">
+					</div>
+				</div>
 
 				<hr style="margin: 50px 0px; opacity: 0.25">
 
 				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> RESEARCH </div>
-				Because most of us had no experience dealing with industrial machines, we set out to do some background research to better understand the different factors that go into machine maintenance and all the different people involved with the reparing process. We had the opportunity to speak with <a href="http://www.precisionstory.com/book" target="_blank"> Timothy Chou</a>, a Stanford professor who wrote a book called <i>Precision</i> about the Internet of Things applied to industrial machinery. We learned that when a machine fails, it usually means that a certain part of the machine has experienced a failure (due to overheating, manufacturing defects, etc.). Researching into the different types of failures helped us solidify a list of information that needed to be displayed. <br>
 
-				This was an overwhelming list at first, because each machine can have hundreds of sensors that collect data constantly. Our challenge was figuring out how to display this information in a readable and intuitive format.
+				<div style="display:flex; justify-content: space-around; flex-flow: row nowrap; width:100%">
+					<div style="flex: 0 1 auto; width:48%; margin-right: 30px">
+						We collected research and background information in several different ways. We were able to gather more background information by doing simple desk research, which we then used to develop a questionaire that would give us deeper insights on the daily experiences of a typical hourly worker. We included questions which delved deeper into an employee's relationships with his/her manager, coworkers, and customers to deduce what factors could influence a job switch. <br> <br>
 
+						We first casually interviewed friends and acquaintances who had customer service jobs, and used our interview experiences to adjust our questions. We did employee intercepts at stores, and talked with employees in their work environment to better understand their experiences. Finally, we met with a focus group of hourly workers away from the workplace to encourage more candid responses. <br> <br>
+					</div>
+					<div style="flex: 0 1 auto; width:48%">
+						<img src="design/hc/research.png" style="width:100%">
+					</div>
+				</div>
+
+				<hr style="margin: 50px 0px; opacity: 0.25">
+
+				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> PERSONAS </div>
+			
+				<div style="display:flex; justify-content: flex-start; flex-flow: row nowrap; width:100%">
+					<div style="flex: 0 1 auto; width:45%; margin-right: 30px">
+						Using our interviews of employees and managers, we put together 3 personas-- 2 of employees, and 1 of a manager. We consolidated common responses and put together a list of common frustrations and motivations. <br>
+						We created a list of research highlights:
+						<div style="margin-left: 40px; margin-top: 20px; margin-bottom:20px; border-left:5px solid #ff812c; padding-left: 15px; margin-right: 30px">
+							1. High turnover rate of managers leads to empoyee distrust, disengagement and poor employee experience <br> <br>
+							2. Relationships with coworkers mediate satisfaction at work <br> <br>
+							3. Employees value guidance but not at expense of their autonomy and pride <br> <br>
+							4. Employees want to feel apart of the workplace leadership decision making process <br> <br>
+							5. Although money matters, people are willing to work for free in jobs they’re passionate about <br> <br>
+						</div>
+					</div>
+					<div style="flex: 0 1 auto; width:55%; display: flex; flex-flow: row nowrap; justify-content: space-around">
+						<div style = "flex: 0 1 auto; width: 55%;">
+							<img src="design/hc/postits.jpg" style="width:100%">
+						</div>
+						<div style = "flex: 0 1 auto; display: flex; flex-flow: column nowrap; width: 43%">
+							<div style = "flex: 0 1 auto">
+								<img src="design/hc/postits2.jpg" style="width:100%">
+							</div>
+							<div style = "flex: 0 1 auto">
+								<img src="design/hc/postits3.jpg" style="width:100%">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				From this list of highlights, we created the following personas:
+
+				<div style="display:flex; justify-content: space-around; flex-flow: row nowrap; width:100%; margin-top: 20px">
+					<div style = "flex: 0 1 auto">
+						<img style="width:100%;" src="design/hc/charlie_persona.png" alt="discussion">
+					</div>
+					<div style = "flex: 0 1 auto">
+						<img style="width:100%;" src="design/hc/alex_persona.png" alt="discussion detail">
+					</div>
+				</div>
+
+				
 				<hr style="margin: 50px 0px; opacity: 0.25">
 
 				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> INITIAL SKETCHES </div>
 
 				After we developed an information hierarchy, we made some initial sketches to lay out the information. Some of the key features we chose to include in our preliminary drafts included:
 				<ul>
-					<li> Map to show location of machines around world, with a color indicator of the machines' status in the area </li>
-					<li> An inbox-type area to see key information for all predicted machine failures </li>
-					<li> An expanded prediction report, with detailed information about the prediction and machine status </li>
+					<li> A distinction between a user's personal posts/progress and workplace communication </li>
+					<li> A newsfeed-like bulletin board communication system to decrease the barrier to engaging in conversation and to encourage interactions </li>
+					<li> A communication forum specific to an employee's team to encourage team bonding </li>
 				</ul>
 				
-				<div style="display:flex; justify-content: space-around; flex-flow: row nowrap; width:100%;">
-					<div style="flex: 0 1 auto; display:flex; flex-flow: column nowrap; width:50%;">
-						<img style="margin-bottom: 10px; flex: 0 1 auto; width: 97%; height:325px" src="design/lecida/a.png" alt="user research">
-						<img style="margin-bottom: 10px; flex: 0 1 auto; width:97%; height: 400px" src="design/lecida/b.png" alt="user research">
+				<div style="display:flex; justify-content: center; flex-flow: row nowrap; width:100%;">
+					<div style="flex: 0 1 auto; width:45%; margin-right:20px">
+						<img src="design/hc/lo_arch.jpg" style="width:100%" alt="user research">
 					</div>
-					<div style="flex: 0 1 auto; display:flex; flex-flow: column nowrap; width:50%;">
-						<img style="margin-bottom: 10px; flex: 0 1 auto; width: 97%; height:350px" src="design/lecida/c.png" alt="user research">
-						<img style="flex: 0 1 auto; width:97%; height: 375px" src="design/lecida/d.png" alt="user research">
+					<div style="flex: 0 1 auto; width: 30%">
+						<img src="design/hc/low_fid.png" style="width:100%" alt="user research">
 					</div>
 				</div>
 
 				<hr style="margin: 50px 0px; opacity: 0.25">
 
-				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> FROM LOW FIDELITY TO HIGH FIDELITY </div>
-				This was an incredibly iterative process. For each rough mockup we made, we then realized we needed to include more information to make the platform more intuitive. Some key pieces of information that we had not anticipated to begin with included:
+				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> INFORMATION ARCHITECTURE & MID FIDELITY PROTOTYPE</div>
 
+
+				<div style="display:flex; justify-content: center; flex-flow: row nowrap; width:100%;">
+					<div style="flex: 0 1 auto; width:35%; margin-right:20px">
+						<img src="design/hc/user_flow.png" style="width:100%" alt="user research">
+					</div>
+					<div style="flex: 0 1 auto; width: 62%">
+						<img src="design/hc/mid_fi.png" style="width:100%" alt="user research">
+					</div>
+				</div>
+
+				<hr style="margin: 50px 0px; opacity: 0.25">
+
+				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> FINAL PROTOTYPE HIGHLIGHTS </div>
+
+				<center>
+					<img src="design/hc/hi_fid.png" style="width:100%" alt="user research">
+				</center>
+				<br>
+				<br>
+
+				The most important features of the final prototype include:
 				<ul>
-					<li> Timeline of a machine's ongoing maintenance history, and the ability to mark the problem as resolved </li>
-					<li> A way to report false negatives and false positives, along with detailed reporting forms to improve the prediction algorithm </li>
-					<li> A way to record and distinguish between predicted failures and actual failures (false negatives) </li>
-					<li> A way to record maintenance updates </li>
-
+					<li> a seamless messaging and discussion platform that stimulates conversation between employees and managers </li>
+					<li> a way to celebrate professional achievements and engage with the work environment </li>
+					<li> a quick and easy mechanism for managers to poll employees and view their feedback at a glance </li>
 				</ul>
 
-				<hr style="margin: 50px 0px; opacity: 0.25">
-
-				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> HOME (THE PREDICTION PAGE) </div>
-
-				We decided to have the "home" screen be an inbox of incoming predicted failures, because this is the information that is most important to see and the main focus of the platform.  <br>
-
-				<div style="display:flex; justify-content: space-around; flex-flow: row nowrap; width:100%; margin:20px; 0px">
-					<div style = "display:flex; flex-flow: column nowrap; flex: 0 1 auto; width: 49%;">
-						<div style = "flex: 0 1 auto; margin-bottom:10px"> MID FIDELITY</div>
-						<img style="flex: 0 1 auto; width: 100%; height:315px" src="design/lecida/mid-home.png" alt="user research">
-					</div>
-					<div style = "display:flex; flex-flow: column nowrap; flex: 0 1 auto; width: 49%">
-						<div style = "flex: 0 1 auto; margin-bottom:10px"> HI FIDELITY </div>
-						<img style="flex: 0 1 auto; width:100%; height: 315px" src="design/lecida/hi-home.png" alt="user research">
-					</div>
-				</div>
-
-				In our mid-fidelity mockups, we displayed details of predicted failures in boxes underneath the map. However, we realized that this might not be the best way to organize them because of sheer quantity-- one manufacturer might be responsible for thousands of machines globally, and this display could easily become overwhelming. <br> <br>
-
-				In our final designs, we instead decided to display predicted failures in an email-inbox design, with limited quantities of information (the most important details) as the previews. Then, the user could click into each one to view relevant details. Another important feature we included was a summary box under the map, so a user could click into any of the branches they own globally and then see summary statistics of machines at that location. This could be helpful to identify faulty machines at a particular location.
-
 
 				<hr style="margin: 50px 0px; opacity: 0.25">
-				
-				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> THE MACHINE PAGE </div>
 
-				We realized it was also important for a manufacturer to be able to see specific details and a history of a particular machine. Important details to view include a rough summary of the machine's specs, an easy visual display of it's sensor data, and a maintenance and prediction history.
+				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> STYLE GUIDE </div>
 
-				<div style="display:flex; justify-content: space-around; flex-flow: row nowrap; width:100%; margin:20px; 0px">
-					<div style = "display:flex; flex-flow: column nowrap; flex: 0 1 auto; width: 49%;">
-						<div style = "flex: 0 1 auto; margin-bottom:10px"> MID FIDELITY</div>
-						<img style="flex: 0 1 auto; width: 100%; height:315px" src="design/lecida/mid-machine.png" alt="user research">
-					</div>
-					<div style = "display:flex; flex-flow: column nowrap; flex: 0 1 auto; width: 49%">
-						<div style = "flex: 0 1 auto; margin-bottom:10px"> HI FIDELITY </div>
-						<img style="flex: 0 1 auto; width:100%; height: 315px" src="design/lecida/hi-machine.png" alt="user research">
-					</div>
-				</div>
-
-				For each machine, we decided to display a summary of its specs, a graphic view of sensor data (with a filter bar to easily identify the sensors in question), a table view of its maintenance history with the ability to click into each entry and view a timeline of progress, and a feed of current predicted failures. <br>
-
-				From this page, users also have the ability to log maintenance and to report a false positive or false negative. 
+				<center>
+					<img src="design/hc/style.png" style="width:75%" alt="user research">
+				</center>
 
 				<hr style="margin: 50px 0px; opacity: 0.25">
 
 				<div style="font-size: 16px; letter-spacing: 3px; margin-bottom: 20px; color: black"> FINAL PRESENTATION </div>
 
 				<center>
-					<img class="project" src="design/lecida/poster.png" alt="poster">
+					<div style="width:100%">
+						<img class="project" src="design/hc/final_poster.png" alt="poster" style="width:100%">
+					</div>
 				</center>
 
 				<hr style="margin: 50px 0px; opacity: 0.25">
