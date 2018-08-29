@@ -508,6 +508,14 @@ footer {
 	margin-top: 10px;
 }
 
+.caption-box {
+	border: 1px solid #ede; 
+	padding: 10px;
+	margin-bottom: 20px;
+	color: #9b889b;
+	text-align: center;
+}
+
 @media screen and (max-width:900px) {
 
 	nav {
@@ -520,5 +528,6 @@ footer {
 		justify-content: center;
 	}
 }
+
 
 
